@@ -6,11 +6,6 @@ title: "Premier travail avec des données"
 source("options_communes.R")
 ```
 
-<div class="note">
-Ce chapitre est inspiré de la section *Premier travail avec les données* du support de cours
-[Introduction à R](https://github.com/juba/intro-r) réalisé par Julien Barnier.
-</div>
-
 ## Regrouper les commandes dans des scripts
 
 Jusqu'à maintenant nous avons utilisé uniquement la console pour communiquer avec **R** via l'invite de

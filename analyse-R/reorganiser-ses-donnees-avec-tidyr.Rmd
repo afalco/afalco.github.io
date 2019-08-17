@@ -6,13 +6,6 @@ title: "Réorganiser ses données avec tidyr"
 source("options_communes.R")
 ```
 
-<div class="note">
-La version originale de ce chapitre a été écrite par Julien Barnier dans le cadre de son
-[Introduction à R et au *tidyverse*](https://juba.github.io/tidyverse/12-tidyr.html).
-</div>
-
-
-
 ## Tidy data
 
 Comme indiqué dans l'[introduction au tidyverse](introduction-au-tidyverse.html#tidydata), les extensions du **tidyverse** comme `dplyr`{.pkg} ou `ggplot2`{.pkg} partent du principe que les données sont "bien rangées" sous forme de <dfn lang="en">tidy data</dfn>.

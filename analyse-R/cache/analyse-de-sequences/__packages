@@ -1,0 +1,10 @@
+base
+TraMineR
+cluster
+ggplot2
+plyr
+magrittr
+JLutils
+tidyr
+stringr
+questionr

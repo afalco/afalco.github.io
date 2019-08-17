@@ -6,12 +6,6 @@ title: "Introduction au tidyverse"
 source("options_communes.R")
 ```
 
-<div class="note">
-La version originale de ce chapitre a été écrite par Julien Barnier dans le cadre de son
-[Introduction à R et au *tidyverse*](https://juba.github.io/tidyverse/06-tidyverse.html).
-</div>
-
-
 ## Extensions
 
 Le terme **tidyverse** est une contraction de *tidy* (qu'on pourrait traduire par "bien rangé") et de *universe*. Il s'agit en fait d'une collection d'extensions conçues pour travailler ensemble et basées sur une philosophie commune.

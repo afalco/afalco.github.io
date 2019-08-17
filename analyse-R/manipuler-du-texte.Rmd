@@ -6,11 +6,6 @@ title: "Manipuler du texte avec stringr"
 source("options_communes.R")
 ```
 
-<div class="note">
-La version originale de ce chapitre a été écrite par Julien Barnier dans le cadre de son
-[Introduction à R et au *tidyverse*](https://juba.github.io/tidyverse/11-stringr.html).
-</div>
-
 Les fonctions de `forcats`{.pkg} vues précédemment permettent de modifier des modalités d'une variables qualitative globalement. Mais parfois on a besoin de manipuler le contenu même du texte d'une variable de type chaîne de caractères : combiner, rechercher, remplacer...
 
 On va utiliser ici les fonctions de l'extension `stringr`{.pkg}. Celle-ci fait partie du coeur du **tidyverse**, elle est donc automatiquement chargée avec :

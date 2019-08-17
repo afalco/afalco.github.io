@@ -6,11 +6,6 @@ title: "Premier contact"
 source("options_communes.R")
 ```
 
-<div class="note">
-Ce chapitre est inspiré de la section *Prise en main* du support de cours
-[Introduction à R](https://github.com/juba/intro-r) réalisé par Julien Barnier.
-</div>
-
 Une fois **RStudio** lancé, vous devriez obtenir une fenêtre similaire à la figure
 ci-après.
 

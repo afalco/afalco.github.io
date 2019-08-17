@@ -64,7 +64,7 @@ Pour cela, il suffit d'aller dans le menu *File > Import Dataset* et de choisir 
 a une autre extension, `.txt` par exemple]. Cette option est également disponible via l'onglet *Environment* dans le quadrant haut-droite.
 
 Pour la suite de la démonstration, nous allons utiliser le fichier exemple
-<http://larmarange.github.io/analyse-R/data/exemple_texte_tabule.txt>.
+<http://afalco.github.io/analyse-R/data/exemple_texte_tabule.txt>.
 
 <figure>
 ![Importer un fichier texte avec RStudio](images/capture_RStudio_import_dataset.png)

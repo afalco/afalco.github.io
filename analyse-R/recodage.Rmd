@@ -6,11 +6,6 @@ title: "Recodage de variables"
 source("options_communes.R")
 ```
 
-<div class="note">
-La version originale de ce chapitre a été écrite par Julien Barnier dans le cadre du support de cours
-[Introduction à R](https://github.com/juba/intro-r).
-</div>
-
 Le <dfn>recodage de variables</dfn><dfn data-index="variable, recodage"></dfn> est une opération extrêmement 
 fréquente lors du traitement d'enquête. Celui-ci
 utilise soit l'une des formes d'indexation décrites précédemment, soit des fonctions *ad hoc* de **R**.

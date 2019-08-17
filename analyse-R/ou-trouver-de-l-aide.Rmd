@@ -6,11 +6,6 @@ title: "Où trouver de l'aide ?"
 source("options_communes.R")
 ```
 
-<div class="note">
-La version originale de ce chapitre a été écrite par Julien Barnier dans le cadre du support de cours
-[Introduction à R](https://github.com/juba/intro-r).
-</div>
-
 ## Aide en ligne
 **R** dispose d'une <dfn>aide en ligne</dfn> très complète, mais dont l'usage n'est pas forcément très simple. D'une
 part car elle est intégralement en anglais, d'autre part car son organisation prend un certain temps à être

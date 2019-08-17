@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -78,7 +79,7 @@ a.sourceLine { text-indent: -1em; padding-left: 1em; }
 pre.numberSource a.sourceLine
   { position: relative; left: -4em; }
 pre.numberSource a.sourceLine::before
-  { content: attr(title);
+  { content: attr(data-line-number);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
     border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
@@ -137,7 +138,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
       var style = rule.style.cssText;
       // check if color or background-color is set
-      if (rule.style.color === '' || rule.style.backgroundColor === '') continue;
+      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
       // replace div.sourceCode by a pre.sourceCode rule
       sheets[i].deleteRule(j);
       sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
@@ -267,18 +268,6 @@ summary {
   display: none;
 }
 </style>
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
 
 <!-- code folding -->
 
@@ -505,9 +494,6 @@ $(document).ready(function () {
 </ul>
 </div>
 
-<div class="note">
-<p>La version originale de ce chapitre a été écrite par Julien Barnier dans le cadre du support de cours <a href="https://github.com/juba/intro-r">Introduction à R</a>.</p>
-</div>
 <div id="aide-en-ligne" class="section level2">
 <h2>Aide en ligne</h2>
 <p><strong>R</strong> dispose d’une <dfn>aide en ligne</dfn> très complète, mais dont l’usage n’est pas forcément très simple. D’une part car elle est intégralement en anglais, d’autre part car son organisation prend un certain temps à être maîtrisée.</p>
@@ -515,9 +501,9 @@ $(document).ready(function () {
 <h3>Aide sur une fonction</h3>
 <p>La fonction la plus utile est sans doute <code data-pkg="utils">help</code> (ou son équivalent <code data-pkg="utils" data-rdoc="Question">?</code>) qui permet d’afficher la page d’aide liée à une ou plusieurs fonctions. Celle-ci permet de lister les arguments de la fonction, d’avoir des informations détaillées sur son fonctionnement, les résultats qu’elle retourne, etc.</p>
 <p>Pour accéder à l’aide de la fonction <code data-pkg="base">mean</code>, par exemple, il vous suffit de saisir directement :</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1">?mean</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1">?mean</a></code></pre></div>
 <p>ou bien</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">help</span>(<span class="st">&quot;mean&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">help</span>(<span class="st">&quot;mean&quot;</span>)</a></code></pre></div>
 <p>Sous <strong>RStudio</strong>, la page d’aide correspondante s’affichera sous l’onglet <em>Help</em> dans le quadrant inférieur droit.</p>
 <p>Chaque page d’aide comprend plusieurs sections, en particulier :</p>
 <table>
@@ -567,7 +553,7 @@ $(document).ready(function () {
 </tbody>
 </table>
 <p>Les exemples peuvent être directement exécutés en utilisant la fonction <code data-pkg="utils">example</code> :</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">example</span>(mean)</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">example</span>(mean)</a></code></pre></div>
 <pre><code>
 mean&gt; x &lt;- c(0:10, 50)
 
@@ -579,12 +565,12 @@ mean&gt; c(xm, mean(x, trim = 0.10))
 <div id="naviguer-dans-laide" class="section level3">
 <h3>Naviguer dans l’aide</h3>
 <p>La fonction <code data-pkg="utils">help.start</code> permet d’afficher le sommaire de l’aide en ligne. Saisissez simplement :</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">help.start</span>()</a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">help.start</span>()</a></code></pre></div>
 <p>Si vous souhaitez rechercher quelque chose dans le contenu de l’aide, vous pouvez utiliser la fonction <code data-pkg="utils">help.search</code> (ou <code data-pkg="utils" data-rdoc="help.search">??</code> qui est équivalente) qui renvoie une liste des pages d’aide contenant les termes recherchés.</p>
 <p>Par exemple :</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">help.search</span>(<span class="st">&quot;logistic&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="kw">help.search</span>(<span class="st">&quot;logistic&quot;</span>)</a></code></pre></div>
 <p>ou</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" title="1">??logistic</a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1">??logistic</a></code></pre></div>
 <p>pour rechercher les pages de l’aide qui contiennent le terme <em>logistic</em>.</p>
 </div>
 </div>
@@ -949,6 +935,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 
 </body>

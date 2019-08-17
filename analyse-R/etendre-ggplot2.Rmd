@@ -146,19 +146,6 @@ Voir le chapitre [Couleurs et palettes](couleurs.html) pour une sélection d'ext
 
 L'extension `hrbrthemes`{.pkg} fournit plusieurs thèmes graphiques pour `ggplot2`{.pkg}. Un exemple ci-dessous. Pour plus d'informations, voir <https://github.com/hrbrmstr/hrbrthemes>.
 
-```{r}
-library(ggplot2)
-library(hrbrthemes)
-ggplot(mtcars, aes(mpg, wt)) +
-  geom_point(aes(color=factor(carb))) +
-  labs(x="Fuel efficiency (mpg)", y="Weight (tons)",
-       title="Seminal ggplot2 scatterplot example",
-       subtitle="A plot that is only useful for demonstration purposes",
-       caption="Brought to you by the letter 'g'") + 
-  scale_color_ipsum() +
-  theme_ipsum_rc()
-```
-
 ### ggthemes
 
 `ggthemes`{.pkg} propose une vingtaine de thèmes différentes présentés sur le site de l'extension : <https://jrnold.github.io/ggthemes/>.

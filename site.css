@@ -344,6 +344,41 @@ h3 {
   color: var(--muted);
 }
 
+.theme-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 18px;
+}
+
+.theme-card {
+  background: var(--surface-alt);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 22px;
+}
+
+.theme-card h4 {
+  border: 0;
+  font-size: 19px;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.theme-card p {
+  color: var(--muted);
+  margin: 0 0 14px;
+}
+
+.theme-card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.theme-card li {
+  margin-bottom: 10px;
+}
+
 .research-content ol {
   margin: 16px 0 0;
   padding-left: 1.4rem;
@@ -432,7 +467,8 @@ h3 {
   .profile-grid,
   .link-grid,
   .institutional-profile,
-  .metrics-grid {
+  .metrics-grid,
+  .theme-grid {
     grid-template-columns: 1fr;
   }
 }

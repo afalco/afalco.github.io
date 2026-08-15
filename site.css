@@ -256,6 +256,94 @@ h3 {
   padding: clamp(22px, 4vw, 46px);
 }
 
+
+
+.institutional-profile {
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  gap: 28px;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+  margin-bottom: 34px;
+  padding-bottom: 34px;
+}
+
+.profile-summary {
+  color: var(--muted);
+  font-size: 19px;
+  margin: 16px 0 0;
+}
+
+.source-note {
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 18px;
+}
+
+.metrics-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+}
+
+.metrics-grid div {
+  background: var(--surface-alt);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.metrics-grid dt {
+  color: var(--accent);
+  font-size: 30px;
+  font-weight: 850;
+  line-height: 1;
+}
+
+.metrics-grid dd {
+  color: var(--muted);
+  margin: 9px 0 0;
+}
+
+.research-overview {
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 34px;
+  padding-bottom: 30px;
+}
+
+.research-overview h3,
+.research-content h4 {
+  border-top: 0;
+  font-size: 23px;
+  margin: 0 0 16px;
+  padding-top: 0;
+}
+
+.research-content h4 {
+  border-top: 1px solid var(--line);
+  margin-top: 34px;
+  padding-top: 26px;
+}
+
+.compact-list,
+.highlight-list {
+  margin: 14px 0 0;
+  padding-left: 1.35rem;
+}
+
+.compact-list li,
+.highlight-list li {
+  margin-bottom: 14px;
+}
+
+.highlight-list strong {
+  display: block;
+}
+
+.highlight-list span {
+  color: var(--muted);
+}
+
 .research-content ol {
   margin: 16px 0 0;
   padding-left: 1.4rem;
@@ -300,7 +388,9 @@ h3 {
   }
 
   .profile-grid,
-  .link-grid {
+  .link-grid,
+  .institutional-profile,
+  .metrics-grid {
     grid-template-columns: 1fr;
   }
 }

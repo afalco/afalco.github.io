@@ -358,6 +358,48 @@ h3 {
   margin: 0.35rem 0;
 }
 
+
+
+.portal-papers {
+  display: grid;
+  gap: 28px;
+}
+
+.paper-year {
+  border-top: 1px solid var(--line);
+  padding-top: 22px;
+}
+
+.paper-year h5 {
+  color: var(--accent);
+  font-size: 21px;
+  line-height: 1.2;
+  margin: 0 0 12px;
+}
+
+.paper-year ol {
+  margin-top: 0;
+}
+
+.paper-year li {
+  margin-bottom: 18px;
+}
+
+.paper-location,
+.doi-link {
+  display: block;
+}
+
+.paper-location {
+  color: var(--muted);
+}
+
+.doi-link {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 3px;
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
   color: var(--muted);
